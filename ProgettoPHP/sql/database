@@ -1,0 +1,33 @@
+Create Database ecommerce;
+
+CREATE TABLE ecommerce.carrello (
+    id INT PRIMARY key AUTO_INCREMENT,
+    prodotto_id INT NOT NULL,
+    quantita INT NOT NULL,
+    numero INT NOT NULL,
+    FOREIGN KEY (utente_id) REFERENCES utenti(id),
+    FOREIGN KEY (prodotto_id) REFERENCES prodotti(id)
+);
+
+CREATE TABLE ecommerce.prodotti (
+    id INT PRIMARY key AUTO_INCREMENT ,
+    nome VARCHAR(255) NOT NULL,
+    descrizione varchar(255),
+    prezzo DECIMAL(10, 2) NOT NULL,
+    immagine VARCHAR(255)
+);
+
+create table ecommerce.utenti(
+id int primary key AUTO_INCREMENT,
+nome varchar(100) NOT NULL,
+email varchar(100)NOT null,
+password varchar(255) NOT NULL
+);
+
+CREATE TABLE ecommerce.sconti (
+    id INT PRIMARY key  AUTO_INCREMENT,
+    codice VARCHAR(50) NOT NULL,
+    valore DECIMAL(5,2) NOT NULL
+);
+
+INSERT INTO ecommerce.sconti (codice, valore) VALUES ('sconto1', 20), ('sconto2', 10);

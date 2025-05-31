@@ -1,0 +1,114 @@
+/* Stile di base */
+body {
+    margin: 0;
+    font-family: 'Teachers', sans-serif;
+    background-color: #fdfdfd;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    color: #222;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons a {
+    font-size: 30px; /* Più grande */
+    color: #333;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.header-icons a:hover {
+    color: #ff69b4;
+}
+
+/* SEZIONE SHOP */
+.shop.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tre colonne fisse */
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.product-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-box:hover {
+    transform: scale(1.05);
+}
+
+.product-img {
+    width: 100%;
+    height: 220px; /* Altezza ridotta */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    margin: 10px 0 5px 0;
+    color: #333;
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Icona del carrello nel prodotto */
+.add-cart {
+    font-size: 28px; /* Più grande */
+    color: #fd5d93;
+    margin-top: 10px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.add-cart:hover {
+    color: #111;
+}
+
+/* FOOTER */
+footer {
+    background: #eee;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-legal p {
+    font-size: 14px;
+    color: #777;
+}
