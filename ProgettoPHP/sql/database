@@ -31,3 +31,10 @@ CREATE TABLE ecommerce.sconti (
 );
 
 INSERT INTO ecommerce.sconti (codice, valore) VALUES ('sconto1', 20), ('sconto2', 10);
+
+INSERT INTO prodotti (nome, descrizione, prezzo, immagine) VALUES
+('Jordan Witch', 'Una sneaker elegante e iconica, perfetta per l uso quotidiano.', 700, 'img\sneaker1.jpg'),
+('Jordan 4', 'Una classica Jordan con un design raffinato.', 890, 'img\sneaker2.jpg'),
+('Jordan 1', 'Una sneaker leggendaria che è sempre alla moda.', 790, 'img\sneaker3.jpg'),
+('Jordan Dance', 'Perfetta per ogni occasione con il suo look elegante e sportivo.', 855, 'img\sneaker4.jpg'),
+('Jordan 4', 'Un modello popolare noto per la sua durabilità e comfort.', 400, 'img\sneaker5.jpg');
